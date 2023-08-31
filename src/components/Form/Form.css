@@ -21,6 +21,7 @@
   .task-form input[type="text"],
   .task-form input[type="date"] {
     width: 100%;
+    font-size:17px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -29,6 +30,7 @@
   
   .task-form textarea {
     width: 100%;
+    font-size:17px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
