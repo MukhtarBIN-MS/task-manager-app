@@ -33,6 +33,7 @@ export default function Form({ addTask }) {
         <input
           id="Title"
           type="text"
+          placeholder="Add Task Title......."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
@@ -40,6 +41,7 @@ export default function Form({ addTask }) {
         <label htmlFor="Description">Description</label>
         <textarea
           id="Description"
+          placeholder="Add Task Desc......."
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
@@ -48,6 +50,7 @@ export default function Form({ addTask }) {
         <input
           id="Date"
           type="date"
+          placeholder="MM/DD/YYYY"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
         /><br/>
