@@ -8,7 +8,7 @@ export default function Form({ addTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!title && !description && !dueDate) {
+    if (!title || !description || !dueDate) {
       alert("Complete the form please");
     } else {
       const newTask = {
@@ -50,8 +50,8 @@ export default function Form({ addTask }) {
           type="date"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
-        />
-
+        /><br/>
+          
         <button type="submit">Add Task</button>
       </form>
     </div>
