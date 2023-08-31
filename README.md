@@ -13,14 +13,19 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Usage
 Add a new task by filling out the form at the top.
+
 Click the "Complete" or "Incomplete" button to mark tasks as complete or incomplete.
+
 Toggle the reminder status by clicking the "Set Reminder" or "Turn Off Reminder" button.
-Edit task details by ...
+
 Delete tasks by clicking the "Delete" button.
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
+
+test all components within the App
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
