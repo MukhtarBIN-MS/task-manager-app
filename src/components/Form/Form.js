@@ -53,8 +53,9 @@ export default function Form({ addTask }) {
           placeholder="MM/DD/YYYY"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
-        /><br/>
-          
+        />
+        <br />
+
         <button type="submit">Add Task</button>
       </form>
     </div>
