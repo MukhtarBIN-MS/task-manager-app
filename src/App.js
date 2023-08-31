@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Form from './components/Form/Form';
+import Tasks from './components/Tasks/Tasks';
+import './App.css'
+import './index.css'
 
-function App() {
+export default function App(){
+  const [tasks, setTasks] = useState([])
+
+  /* This function add a new task to list of tasks */
+  const addTask = (newTask) =>{
+    setTasks([...tasks, newTask]);
+  }
+
+
+ /* This function updates the task whenever there is change of state */
+  const updateTask = (taskId, updatedTask) =>{
+    const updatedTasks = tasks.map((task)=> task.id === taskId ? updatedTask :task);
+    setTasks(updatedTasks);
+  }
+
+  /* This function delete the task */
+  const deleteTask = (taskId) =>{
+   const deletedTask = tasks.filter((task)=> task.id !== taskId);
+   setTasks(deletedTask)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Task Manager</h1>
+      <Form addTask={addTask} />
+      <Tasks
+        tasks={tasks}
+        updateTask={updateTask}
+        deleteTask={deleteTask}
+      />
     </div>
   );
 }
-
-export default App;

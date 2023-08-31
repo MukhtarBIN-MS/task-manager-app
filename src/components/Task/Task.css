@@ -1,0 +1,42 @@
+/* Task Item Styling*/
+.task-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid transparent;
+  }
+  
+  .task-item.completed {
+    background-color: #e1f2e1;
+    border-left-color: #28a745;
+  }
+  
+  .task-item h3 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .task-item p {
+    color: #666;
+  }
+  
+  .task-buttons button {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .task-buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  .task-buttons button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
