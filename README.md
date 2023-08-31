@@ -11,8 +11,12 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage
+Add a new task by filling out the form at the top.
+Click the "Complete" or "Incomplete" button to mark tasks as complete or incomplete.
+Toggle the reminder status by clicking the "Set Reminder" or "Turn Off Reminder" button.
+Edit task details by ...
+Delete tasks by clicking the "Delete" button.
 
 ### `npm test`
 
